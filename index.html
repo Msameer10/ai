@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<!-- Icon Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- W3 schools CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Original CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>AIEdCs</title>
+</head>
+<body onload="typeWriter()">
+	<!-- Navigation Bar -->
+<div id="h1" class="d-none d-sm-none d-md-block"><h1><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></h1></div>
+
+<div class="topnav d-none d-sm-none d-md-block" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <!-- <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a> -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<!-- Mobile Navigation Bar -->
+<div class="mtopnav d-md-none">
+  <a class="d-md-none" href="#" id="mh1"><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></a>
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="links.html">Other Links</a>
+    <!-- <a href="#about">*****</a> -->
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<!-- Content -->
+
+<p id="cs" style="color: red;"></p>
+
+
+	<!-- Scripts -->
+<!-- Mobile Menu -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- ------- Typewriting Script -------->
+
+<script>
+var i = 0;
+var txt = "Coming Soon..."
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("cs").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>

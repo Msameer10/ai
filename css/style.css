@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+
+#mh1{
+	padding: 10px, 0, 20px, 10px;
+}
+
+div#h1{
+	padding: 12px 0 18px 25px;
+}
+
+/*Nav bar*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #111111;
+  padding-left: 15vw;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 7vw;
+  margin: 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*Mobile Nav Bar*/
+
+.mtopnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.mtopnav #myLinks {
+  display: none;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mtopnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mtopnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mtopnav #myLinks.a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*	content*/
+
+#cs{
+	text-align: center;
+	font-size: 40px;
+	margin: 30vh 0;
+	font-family: 'Roboto Mono';
+}
