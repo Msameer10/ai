@@ -18,11 +18,10 @@
 <div id="h1" class="d-none d-sm-none d-md-block"><h1><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></h1></div>
 
 <div class="topnav d-none d-sm-none d-md-block" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
   <a href="features.html">Features</a>
-  <a href="pricing.html">Pricing</a>
+  <a href="pricing.html" class="active">Pricing</a>
   <a href="login.html">Log In</a>
-  <a href="signup.html">Sign Up</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -44,12 +43,34 @@
 
   <!-- Content -->
 
-<p id="cs"></p>
+  <!-- pricing -->
+
+<div class="pr-con">
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / year</li>
+    <li id="pr-li">10GB Storage</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+</div>
 
 
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <!-- footer -->
 
@@ -72,21 +93,6 @@ function myFunction() {
 }
 </script>
 
-<!-- ------- Typewriting Script -------->
-
-<script>
-var i = 0;
-var txt = "The World's first 'Artificial Intelligence' powered Abroad Education Consultancy..";
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("cs").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
 
 </body>
 </html>

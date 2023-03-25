@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 #mh1{
@@ -14,7 +15,7 @@ div#h1{
 .topnav {
   overflow: hidden;
   background-color: #111111;
-  padding-left: 15vw;
+  padding-left: 7vw;
 }
 
 .topnav a {
@@ -57,9 +58,9 @@ div#h1{
 }
 
 .mtopnav a {
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: block;
 }
 
@@ -83,5 +84,84 @@ div#h1{
 	text-align: center;
 	font-size: 40px;
 	margin: 30vh 0;
-	font-family: 'Roboto Mono';
+	font-family: Roboto;
+}
+
+
+/*pricing*/
+
+.pr-con{
+  margin: 50px 10vw;
+  padding: 20px 10vw;
+}
+
+.columns {
+  float: left;
+  width: 30%;
+  padding: 8px;
+  border-radius: 20;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.price li a{
+  text-decoration: none;
+}
+
+#pr-li{
+  padding-bottom: 28vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/* footer*/
+
+.footer{
+  background: #111111;
+  color: white;
+  text-align: center;
+  padding: 8vh 20vw;
 }

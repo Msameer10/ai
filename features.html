@@ -14,15 +14,14 @@
   <title>AIEdCs</title>
 </head>
 <body onload="typeWriter()">
-  <!-- Navigation Bar -->
+   <!-- Navigation Bar -->
 <div id="h1" class="d-none d-sm-none d-md-block"><h1><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></h1></div>
 
 <div class="topnav d-none d-sm-none d-md-block" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="features.html">Features</a>
+  <a href="index.html">Home</a>
+  <a href="features.html" class="active">Features</a>
   <a href="pricing.html">Pricing</a>
   <a href="login.html">Log In</a>
-  <a href="signup.html">Sign Up</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -44,7 +43,6 @@
 
   <!-- Content -->
 
-<p id="cs"></p>
 
 
 
@@ -56,7 +54,6 @@
 <div class="footer">
   <p>&copy; AIEDCS.com - All Rights Reserved - 2023. </p>
 </div>
-
 
 
   <!-- Scripts -->
@@ -72,21 +69,6 @@ function myFunction() {
 }
 </script>
 
-<!-- ------- Typewriting Script -------->
-
-<script>
-var i = 0;
-var txt = "The World's first 'Artificial Intelligence' powered Abroad Education Consultancy..";
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("cs").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
 
 </body>
 </html>
