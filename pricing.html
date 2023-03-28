@@ -14,18 +14,22 @@
   <title>AIEdCs</title>
 </head>
 <body onload="typeWriter()">
-  <!-- Navigation Bar -->
-<div id="h1" class="d-none d-sm-none d-md-block"><h1><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></h1></div>
+   <!-- Navigation Bar -->
 
-<div class="topnav d-none d-sm-none d-md-block" id="myTopnav">
-  <a href="index.html">Home</a>
-  <a href="features.html">Features</a>
-  <a href="pricing.html" class="active">Pricing</a>
-  <a href="login.html">Log In</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<nav class="d-none d-sm-none d-md-flex">
+  <div class="logo">
+    <a href="#">AIEdCs<span>.com</span></a>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="signup.html" class="signup">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- Mobile Navigation Bar -->
 <div class="mtopnav d-md-none">
@@ -34,7 +38,7 @@
     <a href="index.html">Home</a>
     <a href="features.html">Features</a>
     <a href="pricing.html">Pricing</a>
-    <a href="login.html">Log In</a>
+    <a href="signup.html">Sign Up</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -42,41 +46,49 @@
 </div>
 
   <!-- Content -->
-
+<br><br><br><br><br><br><br>
   <!-- pricing -->
 
-<div class="pr-con">
+<div class="pricing-container">
 
-<div class="columns">
-  <ul class="price">
-    <li class="header">Basic</li>
-    <li class="grey">$ 9.99 / year</li>
-    <li id="pr-li">10GB Storage</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-  </ul>
+  <div class="pricing-column">
+    <ul class="pricing-table">
+      <li class="pricing-header">Basic</li>
+      <li class="pricing-price">$9.99 / year</li>
+      <li class="pricing-feature">10GB Storage</li>
+      <li class="pricing-button"><a href="#" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <div class="pricing-column">
+    <ul class="pricing-table featured">
+      <li class="pricing-header">Pro</li>
+      <li class="pricing-price">$24.99 / year</li>
+      <li class="pricing-feature">25GB Storage</li>
+      <li class="pricing-feature">25 Emails</li>
+      <li class="pricing-feature">25 Domains</li>
+      <li class="pricing-feature">2GB Bandwidth</li>
+      <li class="pricing-button"><a href="#" class="button featured">Sign Up</a></li>
+    </ul>
+  </div>
+
 </div>
 
-<div class="columns">
-  <ul class="price">
-    <li class="header" style="background-color:#04AA6D">Pro</li>
-    <li class="grey">$ 24.99 / year</li>
-    <li>25GB Storage</li>
-    <li>25 Emails</li>
-    <li>25 Domains</li>
-    <li>2GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-  </ul>
-</div>
-</div>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <!-- footer -->
 
+
 <div class="footer">
-  <p>&copy; AIEDCS.com - All Rights Reserved - 2023. </p>
+  <div class="footer-links">
+    <a href="tos.html" target="_blank">Terms of Service</a>
+    <a href="policy.html" target="_blank">Privacy Policy</a>
+  </div>
+  <p>Copyright © 2023 AIEdCs.com. All rights reserved.</p>
 </div>
+
 
 
 

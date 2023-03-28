@@ -4,6 +4,8 @@
 
 #mh1{
 	padding: 10px, 0, 20px, 10px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 div#h1{
@@ -12,36 +14,71 @@ div#h1{
 
 /*Nav bar*/
 
-.topnav {
-  overflow: hidden;
-  background-color: #111111;
-  padding-left: 7vw;
+nav {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: blue;
-  text-align: center;
-  padding: 14px 7vw;
-  margin: 0;
+.logo a {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 24px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #black;
-  color: white;
+.logo a span {
+  color: #000000;
 }
 
-.topnav a.active {
-  background-color: blue;
-  color: white;
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.topnav .icon {
-  display: none;
+.menu li {
+  margin: 0 10px;
 }
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: #000000;
+  text-decoration: none;
+  border: 3px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+  margin: -1px;
+}
+
+.menu a.signup {
+  background-color: #16A085;
+  color: #fff;
+  border-color: #16A085;
+}
+
+.menu a.signup:hover {
+  color: #16A085;
+  background-color: #fff;
+}
+
+.menu a.active{
+  background-color:  #ff0000;
+  color: #ffffff;
+  border-color:  #ff0000;
+}
+
+
 
 /*Mobile Nav Bar*/
 
@@ -82,57 +119,67 @@ div#h1{
 
 #cs{
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	margin: 30vh 0;
 	font-family: Roboto;
+  font-style: italic;
 }
 
 
 /*pricing*/
 
-.pr-con{
-  margin: 50px 10vw;
-  padding: 20px 10vw;
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.columns {
-  float: left;
-  width: 30%;
-  padding: 8px;
-  border-radius: 20;
+.pricing-column {
+  width: 300px;
+  margin: 1px 10px;
 }
 
-.price {
+
+.pricing-column:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.pricing-table {
   list-style-type: none;
-  border: 1px solid #eee;
   margin: 0;
   padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
+.pricing-table .pricing-header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
 }
 
-.button {
+.pricing-table .pricing-price {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.pricing-table .pricing-feature {
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-table .pricing-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pricing-table a.button {
   background-color: #04AA6D;
   border-radius: 25px;
   color: white;
@@ -142,26 +189,50 @@ div#h1{
   font-size: 18px;
 }
 
-.price li a{
-  text-decoration: none;
-}
-
-#pr-li{
-  padding-bottom: 28vh;
-}
-
-
 @media only screen and (max-width: 600px) {
-  .columns {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-column {
     width: 100%;
+    margin: 10px 0;
   }
 }
 
+
 /* footer*/
 
-.footer{
+.footer {
   background: #111111;
   color: white;
   text-align: center;
   padding: 8vh 20vw;
+  border-top: 2px solid #333333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: #ffffff;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+  color: #ff0000;
+  border-bottom: 1px dotted #ff0000;
+}
+
+.footer p {
+  margin-top: 30px;
 }

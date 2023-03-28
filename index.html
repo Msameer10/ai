@@ -14,19 +14,22 @@
   <title>AIEdCs</title>
 </head>
 <body onload="typeWriter()">
-  <!-- Navigation Bar -->
-<div id="h1" class="d-none d-sm-none d-md-block"><h1><span class="text-dark">AIEdCs</span><span class="text-danger">.com</span></h1></div>
+     <!-- Navigation Bar -->
 
-<div class="topnav d-none d-sm-none d-md-block" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="features.html">Features</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="login.html">Log In</a>
-  <a href="signup.html">Sign Up</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<nav class="d-none d-sm-none d-md-flex">
+  <div class="logo">
+    <a href="#">AIEdCs<span>.com</span></a>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="signup.html" class="signup">Sign Up</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- Mobile Navigation Bar -->
 <div class="mtopnav d-md-none">
@@ -35,7 +38,7 @@
     <a href="index.html">Home</a>
     <a href="features.html">Features</a>
     <a href="pricing.html">Pricing</a>
-    <a href="login.html">Log In</a>
+    <a href="signup.html">Sign Up</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -54,8 +57,13 @@
   <!-- footer -->
 
 <div class="footer">
-  <p>&copy; AIEDCS.com - All Rights Reserved - 2023. </p>
+  <div class="footer-links">
+    <a href="tos.html" target="_blank">Terms of Service</a>
+    <a href="policy.html" target="_blank">Privacy Policy</a>
+  </div>
+  <p>Copyright © 2023 AIEdCs.com. All rights reserved.</p>
 </div>
+
 
 
 
@@ -76,8 +84,8 @@ function myFunction() {
 
 <script>
 var i = 0;
-var txt = "The World's first 'Artificial Intelligence' powered Abroad Education Consultancy..";
-var speed = 50;
+var txt = "The World's first 'Artificial Intelligence' powered Abroad Education Consultancy...";
+var speed = 60;
 
 function typeWriter() {
   if (i < txt.length) {
